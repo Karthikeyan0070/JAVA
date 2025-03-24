@@ -1,0 +1,28 @@
+class Main{	
+    public static void main(String[] args) {
+      bank ac= new bank("karthi",70000);
+       System.out.println("accholder name:"+ac.getaccholder());
+       System.out.println("accholder balance:"+ac.getbalance());
+       
+       ac.setaccholder("subhatran");
+       System.out.println("update accholder name:"+ac.getaccholder());
+    }
+}
+class bank{
+         private String accholder;
+         private int balance;
+         
+         bank(String accholder,int balance){
+             this.accholder=accholder;
+             this.balance=balance;
+} 
+   public String getaccholder(){
+    return accholder;
+     }
+  public int getbalance(){
+    return balance;
+     }
+     public void setaccholder (String accholder){
+         this.accholder=accholder;
+     }
+}
