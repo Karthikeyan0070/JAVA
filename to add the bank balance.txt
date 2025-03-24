@@ -1,0 +1,47 @@
+class Main{
+   
+    public static void main(String[] args){
+     
+     Account acc=new Account("dakshin",100000);
+   
+     System.out.println("name: "+acc.getAccholder());
+     System.out.println("Balance: "+acc.getBalance());
+     
+     acc.setAccholder("ravi");
+     System.out.println("updated name: "+acc.getAccholder());
+     
+     acc.setBalance(10000);
+     System.out.println("updated balance: "+acc.getBalance());
+     
+   }
+}
+
+class Account{
+   
+    private String Accholder;
+    private int Balance;
+   
+    Account(String Accholder,int Balance){
+       
+        this.Accholder=Accholder;
+        this.Balance=Balance;
+       
+       
+       
+    }
+    public String getAccholder(){
+        return Accholder;
+    }
+     public int getBalance(){
+        return Balance;
+    }
+   
+    //update
+    public void setAccholder(String Accholder){
+        this.Accholder=Accholder;
+    }
+    public void setBalance(int amount){
+        Balance+=amount;
+        this.Balance=Balance;
+    }
+}        
