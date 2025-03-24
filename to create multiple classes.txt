@@ -1,0 +1,15 @@
+class Main{
+    public static void main(String[] args) {
+        sample ref = new sample ("BMW","M5");
+        System.out.println(ref.carname);
+        System.out.println(ref.carmodel);
+    }
+}
+class sample{
+   String carname;
+   String carmodel;
+   sample (String carname,String carmodel ){
+       this.carname=carname;
+       this.carmodel=carmodel;
+   }
+     }
